@@ -1,0 +1,119 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--deep-navy);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    height: var(--nav-height);
+}
+
+.navbarContainer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLink {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: var(--intelligence-teal);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--deep-navy);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 0.5rem;
+}
+
+.dropdownMenu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.dropdownMenu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--intelligence-teal);
+}
+
+
+
+@media (max-width: 768px) {
+    .navbarContainer {
+        padding: 0 1rem;
+    }
+    
+    .nav {
+        gap: 1rem;
+    }
+    
+    .navLink {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        width: 70px;
+    }
+    
+    .ctaButton {
+    color: var(--intelligence-teal);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--intelligence-teal);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+    .ctaButton:hover {
+    background: var(--intelligence-teal);
+    color: var(--deep-navy);
+}
+}

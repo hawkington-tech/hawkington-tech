@@ -1,0 +1,128 @@
+.article {
+    background: var(--deep-navy);
+    padding: 6rem 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.label {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--intelligence-teal);
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #FFFFFF, var(--intelligence-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.meta {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.content {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+}
+
+.content h2 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin: 3rem 0 1.5rem;
+    padding-top: 1rem;
+}
+
+.content h3 {
+    font-size: 1.35rem;
+    color: var(--intelligence-teal);
+    margin: 2rem 0 1rem;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+}
+
+.content strong {
+    color: var(--text-primary);
+}
+
+.content em {
+    color: var(--text-primary);
+    font-style: italic;
+}
+
+.content blockquote {
+    border-left: 3px solid var(--intelligence-teal);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.divider {
+    text-align: center;
+    margin: 3rem 0;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    letter-spacing: 0.5em;
+}
+
+.footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+    text-align: center;
+}
+
+.backLink {
+    display: inline-block;
+    color: var(--intelligence-teal);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.backLink:hover {
+    color: var(--bright-cyan);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .content {
+        font-size: 1.05rem;
+    }
+    
+    .content h2 {
+        font-size: 1.5rem;
+    }
+}
