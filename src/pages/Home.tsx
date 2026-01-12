@@ -7,7 +7,7 @@ export default function Home() {
                 <div className={styles.heroContent}>
                     <div className={styles.heroHeader}>
                         <img 
-                            src="public/images/hti-logomark.png" 
+                            src="images/hti-logomark.png" 
                             alt="Hawkington Technologies" 
                             className={styles.heroLogo}
                         />
