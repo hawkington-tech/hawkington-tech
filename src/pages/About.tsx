@@ -42,6 +42,9 @@ export default function About() {
                         <Link to="/services/system-rebellion" className={styles.serviceCard}>
                             <h3>System Rebellion</h3>
                             <p>Infrastructure monitoring with personality, persistence, and purpose.</p>
+                        </Link>                        <Link to="/services/web-development" className={styles.serviceCard}>
+                            <h3>Web Development</h3>
+                            <p>Clean, functional sites for small businesses. No bloat, no bullshit, prices that won't break the bank.</p>
                         </Link>
                         <Link to="/services/consulting" className={styles.serviceCard}>
                             <h3>AI Collaboration Consulting</h3>
@@ -59,10 +62,7 @@ export default function About() {
                             <h3>Technical Writing</h3>
                             <p>Documentation, whitepapers, README files that humans can actually read.</p>
                         </Link>
-                        <Link to="/services/web-development" className={styles.serviceCard}>
-                            <h3>Web Development</h3>
-                            <p>Clean, functional sites for small businesses. No bloat, no bullshit, prices that won't break the bank.</p>
-                        </Link>
+
                     </div>
                 </div>
             </section>

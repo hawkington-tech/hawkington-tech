@@ -64,10 +64,19 @@
     background: var(--deep-navy);
     border: 1px solid var(--glass-border);
     border-radius: 8px;
-    padding: 0.5rem 0;
+    padding: 1rem;
     min-width: 200px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     margin-top: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdownMenu a {
@@ -115,5 +124,11 @@
     .ctaButton:hover {
     background: var(--intelligence-teal);
     color: var(--deep-navy);
+}
+
+@media (max-width: 768px) {
+    .ctaButton {
+        display: none;
+    }
 }
 }

@@ -63,11 +63,11 @@ export default function Contact() {
                             <div className={styles.services}>
                                 <h3>What I Can Help With</h3>
                                 <ul>
+                                    <li>Web development for small businesses</li>
                                     <li>AI collaboration consulting</li>
                                     <li>Infrastructure monitoring (System Rebellion)</li>
                                     <li>AI integration for your team</li>
                                     <li>Technical writing & documentation</li>
-                                    <li>Web development for small businesses</li>
                                     <li>Developer courses on working with Claude</li>
                                 </ul>
                             </div>
@@ -123,8 +123,8 @@ export default function Contact() {
                                         >
                                             <option value="">Select a topic...</option>
                                             <option value="consulting">AI Collaboration Consulting</option>
-                                            <option value="system-rebellion">System Rebellion</option>
                                             <option value="web-dev">Web Development</option>
+                                            <option value="system-rebellion">System Rebellion</option>
                                             <option value="courses">Courses & Training</option>
                                             <option value="technical-writing">Technical Writing</option>
                                             <option value="research">Research Collaboration</option>

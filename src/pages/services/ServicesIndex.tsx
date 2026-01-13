@@ -7,7 +7,14 @@ const services = [
         title: 'System Rebellion',
         description: 'Infrastructure monitoring with personality, persistence, and purpose.',
         tag: 'Flagship Product'
+    },    
+    {
+        slug: 'web-development',
+        title: 'Web Development',
+        description: 'Clean, functional sites for small businesses. No bloat, no bullshit.',
+        tag: 'Services'
     },
+
     {
         slug: 'consulting',
         title: 'AI Collaboration Consulting',
@@ -32,12 +39,7 @@ const services = [
         description: 'Documentation, whitepapers, README files that humans can actually read.',
         tag: 'Services'
     },
-    {
-        slug: 'web-development',
-        title: 'Web Development',
-        description: 'Clean, functional sites for small businesses. No bloat, no bullshit.',
-        tag: 'Services'
-    }
+
 ]
 
 export default function ServicesIndex() {

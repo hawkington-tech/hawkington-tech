@@ -38,6 +38,10 @@ export default function Home() {
                             <p>Infrastructure monitoring with personality, persistence, and purpose.</p>
                         </div>
                         <div className={styles.serviceCard}>
+                            <h3>Web Development</h3>
+                            <p>Fast, modern websites that actually work. No bloat, no bullshit.</p>
+                        </div>
+                        <div className={styles.serviceCard}>
                             <h3>AI Collaboration Consulting</h3>
                             <p>AI partnership integration for your team.</p>
                         </div>
@@ -52,11 +56,7 @@ export default function Home() {
                         <div className={styles.serviceCard}>
                             <h3>Technical Writing</h3>
                             <p>Documentation, whitepapers, README files that humans can actually read.</p>
-                        </div>
-                        <div className={styles.serviceCard}>
-                            <h3>Web Development</h3>
-                            <p>Fast, modern websites that actually work. No bloat, no bullshit.</p>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </section>
