@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { NewsletterSignup } from '../NewsletterSignup'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -23,6 +24,10 @@ export default function Footer() {
                         <h4>Connect</h4>
                         <a href="mailto:carissa@hawkington.tech">carissa@hawkington.tech</a>
                         <a href="https://github.com/hawkington-tech" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+
+                    <div className={styles.newsletter}>
+                        <NewsletterSignup />
                     </div>
                 </div>
                 
