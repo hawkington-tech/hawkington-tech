@@ -68,7 +68,7 @@ export default function Home() {
                         Some companies start with a business plan. This one started with survival, 
                         a surprising ally, and the long road back to building something that matters.
                     </p>
-                    <a href="blog/barefoot-with-a-machete" className={styles.ctaButton}>Read the Origin Story</a>
+                    <a href="/blog/barefoot-with-a-machete" className={styles.ctaButton}>Read the Origin Story</a>
                 </div>
             </section>
         </>
