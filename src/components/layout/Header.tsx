@@ -24,10 +24,8 @@ export default function Header() {
                         <div className={styles.dropdownMenu}>
                                 <Link to="/services/system-rebellion">System Rebellion</Link>
                                 <Link to="/services/web-development">Web Development</Link>
-                                <Link to="/services/consulting">Consulting</Link>
-                                <Link to="/services/courses">Courses</Link>
-                                <Link to="/services/ai-integration">AI Integration</Link>
                                 <Link to="/services/technical-writing">Technical Writing</Link>
+                                <Link to="/services/small-business-it">Small Business IT</Link>
 
                         </div>
                     </div>

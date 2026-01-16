@@ -14,6 +14,7 @@ import Courses from './pages/services/Courses'
 import AIIntegration from './pages/services/AIIntegration'
 import TechnicalWriting from './pages/services/TechnicalWriting'
 import WebDevelopment from './pages/services/WebDevelopment'
+import SmallBusinessIT from './pages/services/SmallBusinessIT'
 
 
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
                 <Route path="/services/ai-integration" element={<AIIntegration />} />
                 <Route path="/services/technical-writing" element={<TechnicalWriting />} />
                 <Route path="/services/web-development" element={<WebDevelopment />} />
+                <Route path="/services/small-business-it" element={<SmallBusinessIT />} />
             </Routes>
         </Layout>
     )
