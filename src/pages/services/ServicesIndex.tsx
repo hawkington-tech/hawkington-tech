@@ -12,7 +12,7 @@ const services = [
     {
         slug: 'web-development',
         title: 'Web Development',
-        description: 'Fast, modern websites for small businesses. No bloat, no b.s., no agency price tag.',
+        description: 'Fast, modern websites custom built for your business.',
         tag: 'Services'
     },
     {
@@ -24,7 +24,7 @@ const services = [
     {
         slug: 'small-business-it',
         title: 'Small Business IT',
-        description: 'Hardware, networks, servers — assessed, installed, and supported. No upsells, no corporate targets.',
+        description: 'Hardware, networks, servers and more — assessed, installed, and supported.',
         tag: 'Services'
     }
 ]
@@ -35,7 +35,7 @@ export default function ServicesIndex() {
             <section className={styles.hero}>
                 <div className={styles.container}>
                     <h1>Services</h1>
-                    <p>Quality work, fair prices, no corporate b.s. Here's how we can work together.</p>
+                    <p>Quality work at fair prices. Here's how we can work together.</p>
                 </div>
                 <div className={styles.heroCta}>
                     <Link to="/contact" className={styles.heroCtaButton}>Get Started</Link>
