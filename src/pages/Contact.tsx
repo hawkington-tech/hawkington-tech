@@ -64,11 +64,10 @@ export default function Contact() {
                                 <h3>What I Can Help With</h3>
                                 <ul>
                                     <li>Web development for small businesses</li>
-                                    <li>AI collaboration consulting</li>
-                                    <li>Infrastructure monitoring (System Rebellion)</li>
-                                    <li>AI integration for your team</li>
                                     <li>Technical writing & documentation</li>
-                                    <li>Developer courses on working with Claude</li>
+                                    <li>Small business IT services</li>
+                                    <li>Infrastructure monitoring (System Rebellion)</li>
+                                    <li>Something Else</li>
                                 </ul>
                             </div>
                         </div>
@@ -122,12 +121,10 @@ export default function Contact() {
                                             required
                                         >
                                             <option value="">Select a topic...</option>
-                                            <option value="consulting">AI Collaboration Consulting</option>
                                             <option value="web-dev">Web Development</option>
-                                            <option value="system-rebellion">System Rebellion</option>
-                                            <option value="courses">Courses & Training</option>
                                             <option value="technical-writing">Technical Writing</option>
-                                            <option value="research">Research Collaboration</option>
+                                            <option value="small-business-it">Small Business IT</option>
+                                            <option value="system-rebellion">Infrastructure Monitoring</option>
                                             <option value="other">Something Else</option>
                                         </select>
                                     </div>

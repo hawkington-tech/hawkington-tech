@@ -35,7 +35,7 @@ export function NewsletterSignup() {
 
   return (
     <div className={styles.newsletterSignup}>
-        <p>Get Updates. No Spam. Just the good stuff!</p>
+        <p>Register for updates. We promise not to spam you!</p>
       {status === 'success' ? (
         <p className={styles.successMessage}>{message}</p>
       ) : (
