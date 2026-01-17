@@ -10,7 +10,9 @@ export default function About() {
                 <div className={styles.container}>
                     <h1>About Hawkington Technologies</h1>
                     <p className={styles.hook}>
-                        Quality tech services for small businesses. Clear pricing, solid work, no surprises.
+                        Quality tech services for small businesses. </p>
+                    <p className={styles.hook}>
+                        Together we can bridge the gap between your business and technology.
                     </p>
                     <div className={styles.heroCta}>
                         <Link to="/contact" className={styles.heroCtaButton}>Get In Touch</Link>

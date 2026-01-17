@@ -16,7 +16,7 @@
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     background: linear-gradient(to right, #FFFFFF, var(--intelligence-teal));
     -webkit-background-clip: text;
@@ -25,10 +25,49 @@
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    white-space: pre-wrap;
+}
+.heroCta {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.3rem;
+}
+
+
+.heroCtaButton:hover {
+    background: var(--bright-cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(6, 182, 212, 0.4);
+}
+
+.heroEmail {
+    font-size: 1rem;
     color: var(--text-secondary);
 }
 
+.heroEmail a {
+    color: var(--intelligence-teal);
+    text-decoration: none;
+}
+
+.heroEmail a:hover {
+    color: var(--bright-cyan);
+    text-decoration: underline;
+}
+
+.hook {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
 .services {
     padding: 3rem 0 6rem;
 }

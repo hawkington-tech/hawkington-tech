@@ -34,7 +34,7 @@ export default function BlogIndex() {
             <section className={styles.hero}>
                 <div className={styles.container}>
                     <h1>Blog</h1>
-                    <p>Stories, philosophy, and lessons learned from the spaces between.</p>
+                    <p className={styles.hook}>Stories, philosophy, and lessons learned from the spaces between.</p>
                 </div>
             </section>
 

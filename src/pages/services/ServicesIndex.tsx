@@ -5,7 +5,7 @@ import styles from './ServicesIndex.module.css'
 const services = [
     {
         slug: 'system-rebellion',
-        title: 'System Rebellion',
+        title: 'System Rebellion',                                                                                                             
         description: 'Infrastructure monitoring with personality, persistence, and purpose.',
         tag: 'Flagship Product'
     },
@@ -35,7 +35,9 @@ export default function ServicesIndex() {
             <section className={styles.hero}>
                 <div className={styles.container}>
                     <h1>Services</h1>
-                    <p>Quality work at fair prices. Here's how we can work together.</p>
+                    <p className={styles.hook}>We offer web development, technical writing, and small business IT services.</p>
+                    <p className={styles.hook}>Let us help you bridge the gap between your business and technology.</p>
+                    <p className={styles.hook}>Get in touch to learn more.</p>
                 </div>
                 <div className={styles.heroCta}>
                     <Link to="/contact" className={styles.heroCtaButton}>Get Started</Link>

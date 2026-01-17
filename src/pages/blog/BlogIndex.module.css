@@ -16,7 +16,7 @@
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     background: linear-gradient(to right, #FFFFFF, var(--intelligence-teal));
     -webkit-background-clip: text;
@@ -25,7 +25,6 @@
 }
 
 .hero p {
-    font-size: 1.2rem;
     color: var(--text-secondary);
 }
 
@@ -86,7 +85,13 @@
     font-size: 0.85rem;
     color: var(--text-muted);
 }
-
+.hook {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
 @media (max-width: 768px) {
     .hero {
         padding: 6rem 0 3rem;
