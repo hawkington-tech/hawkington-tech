@@ -20,7 +20,7 @@ export default function Home() {
                     </div>
                     <h2 className={styles.heroDescription}>
                         Building connections where others see gaps.<br />
-                        Web development. Technical documentation. Small business IT.
+                        Web development. Technical documentation. Business Systems.
                     </h2>
                 </div>
             </section>
@@ -46,10 +46,10 @@ export default function Home() {
                             <Link to="/services/technical-writing" className={styles.serviceLink}>Learn More →</Link>
                         </div>
                         <div className={styles.serviceCard}>
-                            <h3>Small Business IT</h3>
+                            <h3>Business Systems</h3>
                             <p className={styles.serviceSubtitle}>Tech Setup & Support</p>
                             <p>Hardware assessment, network setup, server configuration, and connectivity solutions. We assess your needs, get you up and running, and offer ongoing support with terms that actually fit your business.</p>
-                            <Link to="/services/small-business-it" className={styles.serviceLink}>Learn More →</Link>
+                            <Link to="/services/business-systems" className={styles.serviceLink}>Learn More →</Link>
                         </div>
                     </div>
                 </div>

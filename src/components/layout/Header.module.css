@@ -112,18 +112,14 @@
     
     .ctaButton {
     color: var(--intelligence-teal);
-    font-weight: 600;
-    font-size: 0.95rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--intelligence-teal);
-    border-radius: 5px;
-    transition: all 0.3s ease;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
     .ctaButton:hover {
-    background: var(--intelligence-teal);
-    color: var(--deep-navy);
+    color: var(--bright-cyan);
 }
 
 @media (max-width: 768px) {

@@ -22,11 +22,10 @@ export default function Header() {
                             Services
                         </Link>
                         <div className={styles.dropdownMenu}>
-                                <Link to="/services/system-rebellion">System Rebellion</Link>
-                                <Link to="/services/web-development">Web Development</Link>
-                                <Link to="/services/technical-writing">Technical Writing</Link>
-                                <Link to="/services/small-business-it">Small Business IT</Link>
-
+                            <Link to="/services/web-development">Web Development</Link>
+                            <Link to="/services/technical-writing">Technical Writing</Link>
+                            <Link to="/services/business-systems">Business Systems</Link>
+                            <Link to="/services/system-rebellion">System Rebellion</Link>
                         </div>
                     </div>
                     
@@ -34,8 +33,8 @@ export default function Header() {
                     <Link to="/contact" className={styles.navLink}>Contact</Link>
                 </nav>
 
-                <Link to="/contact" className={styles.ctaButton}>
-                    Get In Touch
+                <Link to="/services/ongoing-partner" className={styles.ctaButton}>
+                    Work With Us
                 </Link>
             </div>
         </header>

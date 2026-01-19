@@ -9,12 +9,11 @@ import BarefootWithMachete from './pages/blog/BarefootWithMachete'
 import PathInBetween from './pages/blog/PathInBetween'
 import ServicesIndex from './pages/services/ServicesIndex'
 import SystemRebellion from './pages/services/SystemRebellion'
-import Consulting from './pages/services/Consulting'
-import Courses from './pages/services/Courses'
-import AIIntegration from './pages/services/AIIntegration'
+import OngoingPartner from './pages/services/OngoingPartner'
 import TechnicalWriting from './pages/services/TechnicalWriting'
 import WebDevelopment from './pages/services/WebDevelopment'
-import SmallBusinessIT from './pages/services/SmallBusinessIT'
+import BusinessSystems from './pages/services/BusinessSystems'
+import ColdLeadLanding from './pages/ColdLeadLanding.tsx'
 
 
 export default function App() {
@@ -30,12 +29,11 @@ export default function App() {
                 <Route path="/blog/the-path-in-between" element={<PathInBetween />} />
                 <Route path="/services" element={<ServicesIndex />} />
                 <Route path="/services/system-rebellion" element={<SystemRebellion />} />
-                <Route path="/services/consulting" element={<Consulting />} />
-                <Route path="/services/courses" element={<Courses />} />
-                <Route path="/services/ai-integration" element={<AIIntegration />} />
                 <Route path="/services/technical-writing" element={<TechnicalWriting />} />
                 <Route path="/services/web-development" element={<WebDevelopment />} />
-                <Route path="/services/small-business-it" element={<SmallBusinessIT />} />
+                <Route path="/services/ongoing-partner" element={<OngoingPartner />} />
+                <Route path="/services/business-systems" element={<BusinessSystems />} />
+                <Route path="/welcome" element={<ColdLeadLanding />} />
             </Routes>
         </Layout>
     )

@@ -1,6 +1,7 @@
 // SystemRebellion.tsx
 import { Link } from 'react-router-dom'
 import styles from './ServicePage.module.css'
+import WaitlistForm from '../../components/WaitlistForm'
 
 export default function SystemRebellion() {
     return (
@@ -160,7 +161,7 @@ export default function SystemRebellion() {
                 </div>
             </section>
 
-            {/* CTA */}
+            {/* CTA with Waitlist Form */}
             <section className={styles.cta}>
                 <div className={styles.container}>
                     <h2>Join the Rebellion</h2>
@@ -168,12 +169,12 @@ export default function SystemRebellion() {
                         Be first in line when we launch. Waitlist members get founding-tier pricing 
                         and early access to shape the product's evolution.
                     </p>
-                    <Link to="/waitlist" className={styles.ctaButton}>Join the Waitlist</Link>
+                    <WaitlistForm />
                     <p className={styles.emailDirect}>
-                        Or email directly: <a href="mailto:carissa@hawkington.tech">carissa@hawkington.tech</a>
+                        Or email directly: <a href="mailto  :carissa@hawkington.tech">carissa@hawkington.tech</a>
                     </p>
                 </div>
-            </section>
+        </section>
 
             <div className={styles.container}>
                 <Link to="/services" className={styles.backLink}>← Back to Services</Link>

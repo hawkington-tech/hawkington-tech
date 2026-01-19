@@ -1,3 +1,5 @@
+/* ServicesIndex.module.css - COMPLETE */
+
 .servicesPage {
     background: var(--deep-navy);
     min-height: 100vh;
@@ -29,6 +31,12 @@
     color: var(--text-secondary);
     white-space: pre-wrap;
 }
+
+.tagline {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+}
+
 .heroCta {
     margin-top: 1rem;
     display: flex;
@@ -39,11 +47,16 @@
     font-size: 1.3rem;
 }
 
+.heroCtaButton {
+    color: var(--intelligence-teal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
 
 .heroCtaButton:hover {
-    background: var(--bright-cyan);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(6, 182, 212, 0.4);
+    color: var(--bright-cyan);
 }
 
 .heroEmail {
@@ -68,8 +81,14 @@
     line-height: 1rem;
     margin-bottom: 1rem;
 }
+
 .services {
     padding: 3rem 0 6rem;
+}
+
+.serviceGrid {
+    display: grid;
+    gap: 1.5rem;
 }
 
 .serviceCard {
@@ -78,7 +97,6 @@
     border: 1px solid var(--glass-border);
     border-radius: 12px;
     padding: 2rem;
-    margin-bottom: 1.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
@@ -131,6 +149,40 @@
     right: 1.5rem;
 }
 
+/* CTA Section - NEW */
+.cta {
+    padding: 4rem 0;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--deep-navy), #0c2d4a);
+}
+
+.cta h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.cta p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partnerLink {
+    color: var(--intelligence-teal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.partnerLink:hover {
+    color: var(--bright-cyan);
+    text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .hero {
         padding: 6rem 0 3rem;
@@ -146,5 +198,19 @@
     
     .arrow {
         display: none;
+    }
+    
+    .cta {
+        padding: 3rem 0;
+    }
+    
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroCta {
+        flex-direction: column;
     }
 }
