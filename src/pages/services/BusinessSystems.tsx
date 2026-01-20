@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import styles from './ServicePage.module.css'
 
 export default function BusinessSystems() {
+    const [hardwareOpen, setHardwareOpen] = useState(false)
+    const [scopeOpen, setScopeOpen] = useState(false)
     const [termsOpen, setTermsOpen] = useState(false)
 
     return (
@@ -13,43 +15,24 @@ export default function BusinessSystems() {
                 <div className={styles.container}>
                     <span className={styles.tag}>Services</span>
                     <h1>Business Systems</h1>
-                    <p className={styles.tagline}>Technology that works — and keeps working — so you can run your business.</p>
+                    <p className={styles.tagline}>
+                        Technology that works — and keeps working — so you can run your business.
+                    </p>
                     <div className={styles.heroCta}>
-                        <Link to="#how-it-works" className={styles.heroCtaButton}>View Systems Services</Link>
-                        <span className={styles.heroEmail}>&nbsp;or email <a href="mailto:carissa@hawkington.tech">carissa@hawkington.tech</a></span>
+                        <a href="#how-it-works" className={styles.heroCtaButton}>See how it works</a>
+                        <span className={styles.heroEmail}>
+                            &nbsp;or email <a href="mailto:carissa@hawkington.tech">carissa@hawkington.tech</a>
+                        </span>
                     </div>
                 </div>
             </section>
 
-            {/* Overview */}
+            {/* Content */}
             <section className={styles.content}>
                 <div className={styles.container}>
-                    <p className={styles.lead}>
-                        Most small businesses don't need an IT department.<br />
-                        They need their systems to work, their data to be safe, and someone responsible when something breaks.
-                    </p>
-                    <p>
-                        We design, set up, and support the technical systems your business runs on — clearly, predictably, and without upsell nonsense.
-                    </p>
 
-                    <h2>What We Handle</h2>
-                    <p>We take ownership of the systems behind your business, including:</p>
-                    
-                    <div className={styles.highlight}>
-                        <ul>
-                            <li>Office and remote networking</li>
-                            <li>Business email and cloud services</li>
-                            <li>User accounts and permissions</li>
-                            <li>Devices and printers</li>
-                            <li>Basic security and backups</li>
-                            <li>Ongoing support and maintenance</li>
-                        </ul>
-                    </div>
-                    
-                    <p>In plain terms: we make sure your technology doesn't waste your time.</p>
-
-                    {/* How It Works */}
-                    <h2 id="how-it-works">How It Works</h2>
+                    {/* HOW IT WORKS (anchor section) */}
+                   <h2 id="how-it-works">How It Works</h2>
 
                     <div className={styles.pricingGrid}>
                         <div className={styles.pricingCard}>
@@ -65,38 +48,67 @@ export default function BusinessSystems() {
                             </ul>
                             <p className={styles.bestFor}>Every engagement starts here. No exceptions.</p>
                         </div>
+
                         <div className={styles.pricingCard}>
-                            <h4>2. Implementation</h4>
+                    <h4>2. Implementation</h4>
                             <p className={styles.price}>$3,000 – $15,000+</p>
                             <p className={styles.timeline}>Scoped after assessment</p>
-                            <ul>
+                         <ul>
                                 <li>Network setup (router, Wi-Fi, switching)</li>
                                 <li>Business email and cloud services</li>
                                 <li>User accounts and permissions</li>
                                 <li>Printer setup and shared resources</li>
                                 <li>Basic security hardening</li>
                                 <li>Documentation and handoff</li>
-                            </ul>
+                        </ul>
                             <p className={styles.bestFor}>Flat-rate projects based on business size</p>
-                        </div>
-                        <div className={styles.pricingCard}>
-                            <h4>3. Ongoing Support</h4>
-                            <p className={styles.price}>$125 – $250/user/mo</p>
-                            <p className={styles.timeline}>Monthly, per user</p>
-                            <ul>
-                                <li>Monitoring and updates</li>
-                                <li>Email and account support</li>
-                                <li>Remote troubleshooting</li>
-                                <li>Vendor coordination</li>
-                                <li>Security and backups</li>
-                            </ul>
-                            <p className={styles.bestFor}>Predictable monthly cost, stable systems</p>
                         </div>
                     </div>
 
-                    <p className={styles.contractNote}>Assessment fees are credited toward implementation if you move forward.</p>
+                    <div className={`${styles.pricingCard} ${styles.featuredCard}`}>
+                        <div className={styles.badge}>The Relationship</div>
+                        <h4>3. Ongoing Support</h4>
+                        <p className={styles.price}>$125 – $250/user/mo</p>
+                        <p className={styles.timeline}>Monthly, per user</p>
+                        <ul>
+                            <li>Monitoring and updates</li>
+                            <li>Email and account support</li>
+                            <li>Remote troubleshooting</li>
+                            <li>Vendor coordination</li>
+                            <li>Security and backups</li>
+                        </ul>
+                        <p className={styles.bestFor}>Predictable monthly cost, stable systems</p>
+                    </div>
 
-                    {/* Implementation Pricing */}
+                    {/* POSITIONING BREAK */}
+                    <div className={styles.positioningBreak}>
+                        <p>
+                            Most small businesses don't need an IT department. They need their systems to work, 
+                            their data to be safe, and someone responsible when something breaks.
+                        </p>
+                        <p>
+                            We design, set up, and support the technical systems your business runs on — 
+                            clearly, predictably, and without upsell nonsense.
+                        </p>
+                    </div>
+
+                    {/* WHAT WE HANDLE (compressed) */}
+                    <h2>What We Handle</h2>
+                    <div className={styles.referenceBlock}>
+                        <ul>
+                            <li>Office and remote networking</li>
+                            <li>Business email and cloud services</li>
+                            <li>User accounts and permissions</li>
+                            <li>Devices and printers</li>
+                            <li>Basic security and backups</li>
+                            <li>Ongoing support and maintenance</li>
+                        </ul>
+                        <p className={styles.referenceNote}>
+                            In plain terms: we make sure your technology doesn't waste your time.
+                        </p>
+                    </div>
+
+                    {/* IMPLEMENTATION PRICING */}
                     <h2>Implementation Pricing</h2>
                     <p>Projects are flat-rate and scoped in advance based on your business size and needs.</p>
 
@@ -125,7 +137,7 @@ export default function BusinessSystems() {
 
                     <p className={styles.contractNote}>Hardware and subscriptions are billed directly to you. We handle procurement and setup.</p>
 
-                    {/* Ongoing Support */}
+                    {/* ONGOING SUPPORT OPTIONS */}
                     <h2>Ongoing Support Options</h2>
                     <p>Support is sold per user for predictable monthly pricing.</p>
 
@@ -158,95 +170,123 @@ export default function BusinessSystems() {
 
                     <p className={styles.popularNote}>* Managed is our most recommended option</p>
 
-                    {/* Break-Fix */}
+                    {/* BREAK-FIX (reference block) */}
                     <h2>Break-Fix Support</h2>
-                    <p>For businesses that prefer reactive support only.</p>
-
-                    <div className={styles.highlight}>
+                    <div className={styles.referenceBlock}>
+                        <p>For businesses that prefer reactive support only.</p>
                         <ul>
                             <li>$175 – $200/hour</li>
                             <li>1-hour minimum</li>
                             <li>No priority scheduling</li>
                         </ul>
+                        <p className={styles.referenceNote}>
+                            We offer this, but we're honest about it: reactive support costs more than prevention. 
+                            Our managed plans are cheaper because we prevent problems.
+                        </p>
                     </div>
 
-                    <p className={styles.contractNote}>
-                        We offer this, but we're honest about it: reactive support costs more than prevention. Our managed plans are cheaper because we prevent problems.
-                    </p>
-
-                    {/* Hardware */}
-                    <h2>Hardware & Subscriptions</h2>
-
-                    <div className={styles.highlightGrid}>
-                        <div className={styles.highlight}>
-                            <h3>How It Works</h3>
-                            <ul>
-                                <li>We recommend specific models that fit your environment</li>
-                                <li>You pay vendors directly</li>
-                                <li>Warranties and subscriptions stay in your name</li>
-                                <li>We handle procurement, setup, and configuration</li>
-                            </ul>
-                        </div>
-                        <div className={`${styles.highlight} ${styles.warning}`}>
-                            <h3>Why We Don't Resell Hardware</h3>
-                            <ul>
-                                <li>You own your equipment outright</li>
-                                <li>No markup confusion</li>
-                                <li>Warranties are between you and the vendor</li>
-                                <li>Cleaner, more transparent relationship</li>
-                            </ul>
-                        </div>
+                    {/* HARDWARE & SUBSCRIPTIONS (collapsed) */}
+                    <div className={styles.disclosure}>
+                        <button 
+                            className={styles.disclosureToggle}
+                            onClick={() => setHardwareOpen(!hardwareOpen)}
+                            aria-expanded={hardwareOpen}
+                        >
+                            <span>Hardware & Subscriptions (how we handle equipment)</span>
+                            <span className={styles.disclosureArrow}>{hardwareOpen ? '−' : '+'}</span>
+                        </button>
+                        
+                        {hardwareOpen && (
+                            <div className={styles.disclosureContent}>
+                                <div className={styles.scopeGrid}>
+                                    <div className={styles.scopeBlock}>
+                                        <h4>How It Works</h4>
+                                        <ul>
+                                            <li>We recommend specific models that fit your environment</li>
+                                            <li>You pay vendors directly</li>
+                                            <li>Warranties and subscriptions stay in your name</li>
+                                            <li>We handle procurement, setup, and configuration</li>
+                                        </ul>
+                                    </div>
+                                    <div className={`${styles.scopeBlock} ${styles.warning}`}>
+                                        <h4>Why We Don't Resell Hardware</h4>
+                                        <ul>
+                                            <li>You own your equipment outright</li>
+                                            <li>No markup confusion</li>
+                                            <li>Warranties are between you and the vendor</li>
+                                            <li>Cleaner, more transparent relationship</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p className={styles.smallNote}>
+                                    Our value is in the specification, configuration, and ongoing support — not in being a middleman for gear.
+                                </p>
+                            </div>
+                        )}
                     </div>
 
-                    <p>Our value is in the specification, configuration, and ongoing support — not in being a middleman for gear.</p>
-
-                    {/* What This Is and Isn't */}
-                    <h2>What This Is — and Isn't</h2>
-
-                    <div className={styles.highlightGrid}>
-                        <div className={styles.highlight}>
-                            <h3>This Is</h3>
-                            <ul>
-                                <li>Proactive system management</li>
-                                <li>Clear ownership and accountability</li>
-                                <li>Predictable costs</li>
-                                <li>Someone who understands your setup</li>
-                            </ul>
-                        </div>
-                        <div className={`${styles.highlight} ${styles.warning}`}>
-                            <h3>This Is Not</h3>
-                            <ul>
-                                <li>Emergency-only break-fix</li>
-                                <li>Hidden fees</li>
-                                <li>Mystery invoices</li>
-                                <li>24/7 on-call support</li>
-                            </ul>
-                        </div>
+                    {/* WHAT THIS IS / ISN'T (collapsed) */}
+                    <div className={styles.disclosure}>
+                        <button 
+                            className={styles.disclosureToggle}
+                            onClick={() => setScopeOpen(!scopeOpen)}
+                            aria-expanded={scopeOpen}
+                        >
+                            <span>What this is — and isn't</span>
+                            <span className={styles.disclosureArrow}>{scopeOpen ? '−' : '+'}</span>
+                        </button>
+                        
+                        {scopeOpen && (
+                            <div className={styles.disclosureContent}>
+                                <div className={styles.scopeGrid}>
+                                    <div className={styles.scopeBlock}>
+                                        <h4>This Is</h4>
+                                        <ul>
+                                            <li>Proactive system management</li>
+                                            <li>Clear ownership and accountability</li>
+                                            <li>Predictable costs</li>
+                                            <li>Someone who understands your setup</li>
+                                        </ul>
+                                    </div>
+                                    <div className={`${styles.scopeBlock} ${styles.warning}`}>
+                                        <h4>This Is Not</h4>
+                                        <ul>
+                                            <li>Emergency-only break-fix</li>
+                                            <li>Hidden fees</li>
+                                            <li>Mystery invoices</li>
+                                            <li>24/7 on-call support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p className={styles.smallNote}>
+                                    If you want reactive support only, we can do that — but it's more expensive and slower.
+                                </p>
+                            </div>
+                        )}
                     </div>
 
-                    <p>If you want reactive support only, we can do that — but it's more expensive and slower.</p>
+                    {/* SERVICE AREA */}
+                    <div className={styles.referenceBlock}>
+                        <h3>Service Area</h3>
+                        <p>
+                            Based in Marshall, Illinois. On-site services available within a 25-mile radius. 
+                            Projects in Indiana incur a minimum 10% increase in project costs due to tax and compliance requirements.
+                            Remote support available for all clients.
+                        </p>
+                    </div>
 
-                    {/* Service Area */}
-                    <h2>Service Area</h2>
-                    <p>
-                        Based in Marshall, Illinois. On-site services available within a 25-mile radius. 
-                        Projects in Indiana incur a minimum 10% increase in project costs due to tax and compliance requirements.
-                        Ongoing support contracts are quoted at standard rates regardless of location.
-                        Remote support available for all clients.
-                    </p>
-
-                    {/* Payment Terms */}
-                    <h2>Payment Terms</h2>
-                    <div className={styles.highlight}>
+                    {/* PAYMENT TERMS (demoted) */}
+                    <div className={styles.paymentTerms}>
+                        <h3>Payment & Engagement</h3>
                         <ul>
                             <li>Assessments are billed upfront</li>
                             <li>Implementation projects require a 50% deposit</li>
                             <li>Ongoing support is billed monthly</li>
                         </ul>
+                        <p className={styles.smallNoteTight}>Clear scope. Clear pricing. No surprises.</p>
                     </div>
-                    <p>Clear scope. Clear pricing. No surprises.</p>
 
-                    {/* Terms Accordion */}
+                    {/* FULL TERMS (accordion, de-duplicated) */}
                     <div className={styles.termsSection}>
                         <button 
                             className={styles.termsToggle}
@@ -273,7 +313,6 @@ export default function BusinessSystems() {
                                     <li>Remaining 50% due upon completion</li>
                                     <li>Projects are flat-rate based on scope defined after assessment</li>
                                     <li>Scope changes require written approval and may adjust cost</li>
-                                    <li>Hardware and subscriptions billed directly to client</li>
                                 </ul>
 
                                 <h4>Ongoing Support Terms</h4>
@@ -289,25 +328,6 @@ export default function BusinessSystems() {
                                     <li>$175–$200/hour, 1-hour minimum</li>
                                     <li>No priority scheduling</li>
                                     <li>Payment due upon completion</li>
-                                    <li>Not covered under managed support unless specified</li>
-                                </ul>
-
-                                <h4>Hardware Policy</h4>
-                                <ul>
-                                    <li>HTI does not resell hardware</li>
-                                    <li>We specify, procure on your behalf, and configure</li>
-                                    <li>You pay vendors directly</li>
-                                    <li>Warranties remain between you and the vendor</li>
-                                    <li>Small peripherals (cables, adapters) may be included in project cost</li>
-                                </ul>
-
-                                <h4>Service Area</h4>
-                                <ul>
-                                    <li>On-site support within 25 miles of Marshall, IL</li>
-                                    <li>Indiana projects incur minimum 10% increase on project costs</li>
-                                    <li>Ongoing support contracts quoted at standard rates regardless of state</li>
-                                    <li>Remote support available for all clients</li>
-                                    <li>Travel outside service area quoted separately</li>
                                 </ul>
 
                                 <h4>What We Don't Do</h4>
@@ -318,13 +338,17 @@ export default function BusinessSystems() {
                                     <li>Work without signed agreement and deposit</li>
                                     <li>Support for systems we didn't assess or implement</li>
                                 </ul>
+
+                                <p className={styles.smallNote} style={{ fontStyle: 'italic' }}>
+                                    Hardware policy and service area details are as listed above. Full details provided in the signed agreement.
+                                </p>
                             </div>
                         )}
                     </div>
 
-                    {/* Docs Links */}
+                    {/* DOCS LINKS (reframed) */}
                     <div className={styles.docsLinks}>
-                        <h3>Documentation</h3>
+                        <h3>What Working Together Looks Like</h3>
                         <p>Everything's transparent. Here's what you'll be working with:</p>
                         <ul>
                             <li><Link to="/docs/briefs/business-systems">Business Systems Assessment Intake</Link></li>
@@ -333,10 +357,13 @@ export default function BusinessSystems() {
                         </ul>
                     </div>
 
-                    {/* Partner Mention */}
+                    {/* PARTNER MENTION */}
                     <div className={styles.partnerMention}>
-                        <p>Some clients choose our <Link to="/services/ongoing-partner">Ongoing Partner</Link> model instead — one relationship for website, documentation, and systems support.</p>
+                        <p>
+                            Some clients choose our <Link to="/services/ongoing-partner">Ongoing Partner</Link> model instead — one relationship for website, documentation, and systems support.
+                        </p>
                     </div>
+
                 </div>
             </section>
 
@@ -344,8 +371,8 @@ export default function BusinessSystems() {
             <section className={styles.cta}>
                 <div className={styles.container}>
                     <h2>Ready to get your systems sorted?</h2>
-                    <p>
-                        Every engagement starts with an assessment. Let's find out what you actually need.
+                    <p className={styles.ctaLead}>
+                        If you want technology that works, predictable costs, and someone who actually takes responsibility — let's start with an assessment.
                     </p>
                     <Link to="/contact" className={styles.ctaButton}>Get In Touch</Link>
                     <p className={styles.emailDirect}>

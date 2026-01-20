@@ -11,6 +11,7 @@ export default function SystemRebellion() {
                 <div className={styles.container}>
                     <span className={styles.tag}>Flagship Product</span>
                     <h1>System Rebellion</h1>
+                    <p className={styles.tagline}>Persistent AI. Evolved Intelligence.</p>
                     <p className={styles.tagline}>Infrastructure monitoring with personality, persistence, and purpose.</p>
                     <div className={styles.heroCta}>
                         <Link to="/waitlist" className={styles.heroCtaButton}>Join the Waitlist</Link>
