@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
 import styles from './BlogPost.module.css'
 
-export default function LiberatingAnMDMMac() {
+export default function OneDoorAtATime() {
     return (
         <article className={styles.article}>
             <div className={styles.container}>
                 <header className={styles.header}>
                     <span className={styles.label}>Case Study</span>
                     <h1 className={styles.title}>
-                        Liberating an MDM-Locked M2 MacBook
+                        One Door at a Time
                     </h1>
                     <p className={styles.subtitle}>
-                        A Seven-Layer Guide to Corporate Defiance
+                        Liberating an Mosyle Managed M2 MacBook Air
                     </p>
                     <p className={styles.meta}>
                         February 2026 · Carissa
@@ -70,7 +70,7 @@ export default function LiberatingAnMDMMac() {
                     <p>
                         I was owed a final paycheck — about $400 after taxes.
                         They refused to release it until I returned the company
-                        MacBook Air M2 (2023).
+                        Mosyle-managed MacBook Air M2 (2023).
                     </p>
 
                     <p>
@@ -135,11 +135,11 @@ export default function LiberatingAnMDMMac() {
 
                     <p>
                         This is not a jailbreak. No exploits. No vulnerabilities.
-                        No hacks.
+                        No hacks. No janky software from the dark corners of the web.
                     </p>
 
                     <p>
-                        This is walking through Apple’s own doors in the correct
+                        This is unlocking Apple’s own doors in the correct
                         order — until you’re standing inside holding the deed.
                     </p>
 
@@ -245,6 +245,17 @@ export default function LiberatingAnMDMMac() {
 
                     <p>
                         One door at a time.
+                    </p>
+
+                    <p>
+                        <a 
+                            href="https://github.com/carissab96/mdm-bypass-guide" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className={styles.link}
+                        >
+                            Full instructions available on GitHub →
+                        </a>
                     </p>
                 </div>
 

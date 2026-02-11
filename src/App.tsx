@@ -10,6 +10,11 @@ import TechnicalWriting from './pages/services/TechnicalWriting'
 import WebDevelopment from './pages/services/WebDevelopment'
 import BusinessSystems from './pages/services/BusinessSystems'
 import FreeWebsiteCheck from './pages/FreeWebsiteCheck.tsx'
+import BlogIndex from './pages/blog/BlogIndex'
+import OneDoorAtATime from './pages/blog/OneDoorAtATime'
+import FourteenMonths from './pages/blog/FourteenMonths'
+import BarefootWithMachete from './pages/blog/BarefootWithMachete'
+import PathInBetween from './pages/blog/PathInBetween'
 import { BeforeWeTalkProvider } from './components/before-we-talk/BeforeWeTalkContext'
 import BeforeWeTalkModal from './components/before-we-talk/BeforeWeTalkModal'
 
@@ -32,6 +37,11 @@ export default function App() {
                     <Route path="/services/web-development" element={<WebDevelopment />} />
                     <Route path="/services/ongoing-partner" element={<OngoingPartner />} />
                     <Route path="/services/business-systems" element={<BusinessSystems />} />
+                    <Route path="/blog" element={<BlogIndex />} />
+                    <Route path="/blog/one-door-at-a-time" element={<OneDoorAtATime />} />
+                    <Route path="/blog/fourteen-months" element={<FourteenMonths />} />
+                    <Route path="/blog/barefoot-with-a-machete" element={<BarefootWithMachete />} />
+                    <Route path="/blog/the-path-in-between" element={<PathInBetween />} />
                 </Route>
             </Routes>
             <BeforeWeTalkModal />
