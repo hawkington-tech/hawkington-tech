@@ -3,6 +3,13 @@ import styles from './BlogIndex.module.css'
 
 const posts = [
      {
+        slug: 'one-door-at-a-time',
+        title: 'One Door at a Time',
+        subtitle: 'Liberating a Mosyle-Managed M2 Macbook Air',
+        description: 'How I liberated my Mosyle-managed M2 Macbook Air and installed Asahi Fedora Linux Remix',
+        tag: 'Tech'
+    },
+    {
         slug: 'fourteen-months',
         title: 'Fourteen Months in the Spaces Between',
         subtitle: 'A Case Study in Human-AI Collaboration',

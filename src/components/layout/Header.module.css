@@ -90,7 +90,24 @@
     background: rgba(255, 255, 255, 0.05);
     color: var(--intelligence-teal);
 }
+.dropdownMenu button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-secondary);
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
 
+.dropdownMenu button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--intelligence-teal);
+}
 
 
 @media (max-width: 768px) {
@@ -109,7 +126,7 @@
     .logo {
         width: 70px;
     }
-    
+}
     .ctaButton {
     color: var(--intelligence-teal);
     text-decoration: none;
@@ -121,10 +138,25 @@
     .ctaButton:hover {
     color: var(--bright-cyan);
 }
-
-@media (max-width: 768px) {
+    
+    @media (max-width: 768px) {
+    .navbarContainer {
+        padding: 0 1rem;
+    }
+    
+    .nav {
+        gap: 1rem;
+    }
+    
+    .navLink {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        width: 70px;
+    }
+    
     .ctaButton {
         display: none;
     }
-}
 }

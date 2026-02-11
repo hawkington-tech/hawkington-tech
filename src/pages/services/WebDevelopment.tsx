@@ -278,11 +278,9 @@ export default function WebDevelopment() {
                     {/* DOCS LINKS (reframed) */}
                     <div className={styles.docsLinks}>
                         <h3>What Working Together Looks Like</h3>
-                        <p>Everything's transparent. Here's what you'll be working with:</p>
+                        <p>Want to prepare for our first conversation? Start here:</p>
                         <ul>
                             <li><Link to="/docs/briefs/website">Website Project Brief</Link></li>
-                            <li><Link to="/docs/contracts/web-development">Sample Web Development Contract</Link></li>
-                            <li><Link to="/docs/contracts/maintenance">Sample Maintenance Agreement</Link></li>
                         </ul>
                     </div>
 

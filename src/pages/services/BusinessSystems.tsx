@@ -63,7 +63,7 @@ export default function BusinessSystems() {
                         </ul>
                             <p className={styles.bestFor}>Flat-rate projects based on business size</p>
                         </div>
-                    </div>
+                    
 
                     <div className={`${styles.pricingCard} ${styles.featuredCard}`}>
                         <div className={styles.badge}>The Relationship</div>
@@ -78,6 +78,7 @@ export default function BusinessSystems() {
                             <li>Security and backups</li>
                         </ul>
                         <p className={styles.bestFor}>Predictable monthly cost, stable systems</p>
+                    </div>
                     </div>
 
                     {/* POSITIONING BREAK */}
@@ -349,11 +350,9 @@ export default function BusinessSystems() {
                     {/* DOCS LINKS (reframed) */}
                     <div className={styles.docsLinks}>
                         <h3>What Working Together Looks Like</h3>
-                        <p>Everything's transparent. Here's what you'll be working with:</p>
+                        <p>Want to prepare for our first conversation? Start here:</p>
                         <ul>
                             <li><Link to="/docs/briefs/business-systems">Business Systems Assessment Intake</Link></li>
-                            <li><Link to="/docs/contracts/business-systems">Sample Implementation Contract</Link></li>
-                            <li><Link to="/docs/contracts/support">Sample Support Agreement</Link></li>
                         </ul>
                     </div>
 

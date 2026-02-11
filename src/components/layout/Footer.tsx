@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { NewsletterSignup } from '../NewsletterSignup'
+// import { NewsletterSignup } from '../NewsletterSignup'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -26,13 +26,15 @@ export default function Footer() {
                     <div className={styles.links}>
                         <h4>Company</h4>
                         <Link to="/about">About</Link>
-                        <Link to="/blog">Blog</Link>
+                        {/* <Link to="/blog">Blog</Link> */}
                         <Link to="/contact">Contact</Link>
                     </div>
 
+                    {/* Newsletter disabled for now
                     <div className={styles.newsletter}>
                         <NewsletterSignup />
                     </div>
+                    */}
                 </div>
                 
                 <div className={styles.bottom}>

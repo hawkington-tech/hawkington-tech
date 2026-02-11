@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom'
+import { useBeforeWeTalkModal } from '../before-we-talk/BeforeWeTalkContext'
+import type { ServiceType } from '../../hooks/useBeforeWeTalk'
 import styles from './Header.module.css'
 
 export default function Header() {
+    const { openModal } = useBeforeWeTalkModal()
+    
+    const handleBriefClick = (service: ServiceType) => {
+        openModal(service)
+    }
+    
     return (
         <header className={styles.navbar}>
             <div className={styles.navbarContainer}>
@@ -29,7 +37,21 @@ export default function Header() {
                         </div>
                     </div>
                     
-                    <Link to="/blog" className={styles.navLink}>Blog</Link>
+                    <div className={styles.dropdown}>
+                        <span className={styles.navLink}>Before We Talk</span>
+                        <div className={styles.dropdownMenu}>
+                            <button onClick={() => handleBriefClick('web-development')}>
+                                Website Project
+                            </button>
+                            <button onClick={() => handleBriefClick('technical-writing')}>
+                                Technical Writing
+                            </button>
+                            <button onClick={() => handleBriefClick('business-systems')}>
+                                Business Systems
+                            </button>
+                        </div>
+                    </div>
+                    
                     <Link to="/contact" className={styles.navLink}>Contact</Link>
                 </nav>
 
