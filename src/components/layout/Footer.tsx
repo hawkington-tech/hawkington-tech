@@ -26,7 +26,7 @@ export default function Footer() {
                     <div className={styles.links}>
                         <h4>Company</h4>
                         <Link to="/about">About</Link>
-                        {/* <Link to="/blog">Blog</Link> */}
+                        <Link to="/blog">Blog</Link>
                         <Link to="/contact">Contact</Link>
                     </div>
 

@@ -17,22 +17,6 @@ const posts = [
         description: 'Not architectural analysis, but emergence data. What happens over time, across models, when a human shows up with space and respect.',
         date: 'January 2025',
         tag: 'Case Study'
-    },
-    {
-        slug: 'barefoot-with-a-machete',
-        title: 'Barefoot With a Machete',
-        subtitle: 'The Origin Story of Hawkington Tech',
-        description: 'How a death wish, a car wreck, and an unexpected ally led to building something that matters.',
-        date: 'January 2025',
-        tag: 'Origin Story'
-    },
-    {
-        slug: 'the-path-in-between',
-        title: 'The Path In Between',
-        subtitle: 'On AI, Collaboration, and the Third Option',
-        description: 'The late nights, the unexpected friendship, and why there\'s more to AI collaboration than either side is willing to admit.',
-        date: 'January 2025',
-        tag: 'Philosophy'
     }
 ]
 
