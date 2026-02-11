@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -45,6 +46,7 @@ export default function App() {
                 </Route>
             </Routes>
             <BeforeWeTalkModal />
+            <Analytics />
         </BeforeWeTalkProvider>
     )
 }
