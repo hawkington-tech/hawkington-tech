@@ -59,7 +59,7 @@ export default function Home() {
             <section className={styles.rebellion}>
                 <div className={styles.container}>
                     <h2>System Rebellion</h2>
-                    <p className={styles.rebellionSubtitle}>Coming Spring 2026</p>
+                    <p className={styles.rebellionSubtitle}>Coming Summer 2026</p>
                     <p>
                         Our flagship product — an infrastructure monitoring system with personality, 
                         persistence, and purpose. Multi-agent intelligence that watches your systems 
