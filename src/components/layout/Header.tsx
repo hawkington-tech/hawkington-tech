@@ -5,26 +5,26 @@ import styles from './Header.module.css'
 
 export default function Header() {
     const { openModal } = useBeforeWeTalkModal()
-    
+
     const handleBriefClick = (service: ServiceType) => {
         openModal(service)
     }
-    
+
     return (
         <header className={styles.navbar}>
             <div className={styles.navbarContainer}>
                 <Link to="/" className={styles.logoLink}>
-                    <img 
-                        src="/images/hti-logomark.png" 
-                        alt="Hawkington Technologies" 
+                    <img
+                        src="/images/hti-logomark.png"
+                        alt="Hawkington Technologies"
                         className={styles.logo}
                     />
                 </Link>
-                
+
                 <nav className={styles.nav}>
                     <Link to="/" className={styles.navLink}>Home</Link>
                     <Link to="/about" className={styles.navLink}>About</Link>
-                    
+
                     <div className={styles.dropdown}>
                         <Link to="/services" className={styles.navLink}>
                             Services
@@ -36,7 +36,9 @@ export default function Header() {
                             <Link to="/services/system-rebellion">System Rebellion</Link>
                         </div>
                     </div>
-                    
+
+                    <Link to="/blog" className={styles.navLink}>Blog</Link>
+
                     <div className={styles.dropdown}>
                         <span className={styles.navLink}>Before We Talk</span>
                         <div className={styles.dropdownMenu}>
@@ -51,7 +53,7 @@ export default function Header() {
                             </button>
                         </div>
                     </div>
-                    
+
                     <Link to="/contact" className={styles.navLink}>Contact</Link>
                 </nav>
 

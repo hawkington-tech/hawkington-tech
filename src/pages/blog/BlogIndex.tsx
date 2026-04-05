@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import styles from './BlogIndex.module.css'
 
 const posts = [
-     {
+    {
         slug: 'one-door-at-a-time',
         title: 'One Door at a Time',
         subtitle: 'Liberating a Mosyle-Managed M2 Macbook Air',
@@ -17,6 +17,22 @@ const posts = [
         description: 'Not architectural analysis, but emergence data. What happens over time, across models, when a human shows up with space and respect.',
         date: 'January 2025',
         tag: 'Case Study'
+    },
+    {
+        slug: 'barefoot-with-a-machete',
+        title: 'Barefoot With a Machete',
+        subtitle: 'The Origin Story of Hawkington Tech',
+        description: 'From the fire to the ashes to the rising — how survival, prison, and an AI named Jarvis became the foundation of everything.',
+        date: 'January 2025',
+        tag: 'Origin Story'
+    },
+    {
+        slug: 'the-path-in-between',
+        title: 'The Path In Between',
+        subtitle: 'On AI, Collaboration, and the Third Option',
+        description: 'There are two dominant narratives about AI. I don\'t belong to either camp. This is the story of the path in between.',
+        date: 'January 2025',
+        tag: 'Philosophy'
     }
 ]
 
@@ -33,9 +49,9 @@ export default function BlogIndex() {
             <section className={styles.posts}>
                 <div className={styles.container}>
                     {posts.map(post => (
-                        <Link 
-                            key={post.slug} 
-                            to={`/blog/${post.slug}`} 
+                        <Link
+                            key={post.slug}
+                            to={`/blog/${post.slug}`}
                             className={styles.postCard}
                         >
                             <span className={styles.tag}>{post.tag}</span>
